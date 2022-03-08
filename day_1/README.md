@@ -13,21 +13,21 @@ Result: reasonable success
 The dis-information researcher who goes by @conspirator0 on Twitter has posted about detecting sock puppet/bot Twitter accounts by identifying profile pictures that are from a GAN. Specifically that eye placement is a tell-tail sign of GAN image.
 
 
-![](media/Screen Shot 2022-03-08 at 10.38.25 AM.png)
+![](media/screen-shot-1.png)
 [Link to Tweet](https://twitter.com/conspirator0/status/1457051603773575168)
 
 I wanted to see if computer vision eye detection would easily "witness marks" of a GAN.
 
 My first pass as using OpenCV showed the eye detection of Haar Cascades generated false positives.
 
-![](media/Screen Shot 2022-03-08 at 10.41.11 AM.png)
+![](./media/screen-shot-2.png)
 
 `Day 1 code` is to intended to reduce false positives by filtering unlikely eye candidates.
 
 
 ### Results 
 
-![](media/Screen Shot 2022-03-08 at 11.58.12 AM.png)
+![](./media/screen-shot-3.png)
 
 Filtered out false positives with a few passes 
 - Any eye rectangles that overlapped with other eye rectanges
