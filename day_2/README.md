@@ -21,7 +21,7 @@ Twitter returns control back to the script
 
 Getting the response is kind of hand waved away. This is the same in the [pytwitter-2 documentation](https://github.com/sns-sdks/python-twitter).
 
-![](/Users/pickard/projects/100_days_of_code_2022/day_2/media/screen-shot-2.png)
+![](media/screen-shot-2.png)
 🤷‍♂️"Copy the response URL"
 
 I wrote a helper for pytwitter-2. This is a port of the same idea to tweepy. In the dev forum tweepy seems to be used more commonly as a Python module 
