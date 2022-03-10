@@ -32,8 +32,8 @@ For basic test it works
 
 
 ```
-This is the expected output. The test files `small_*` are chopped up pieces of `test_files/big_sample_from_top.txt`. Diff'ing the `output .txt`
-shows the file_joiner program rememberable the pieces and stipped out overlaps.
+This is the expected output. The test files `small_*` are chopped up pieces of `test_files/big_sample_from_top.txt`. Diff'ing the `output.txt`
+shows the file_joiner program reassembled the pieces and stripped out overlaps.
 
 ### If I was to do more
 
