@@ -9,4 +9,5 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 1 | OpenCV eye deteciton false positive reduction | Completed | Python   |
 | 2 | Tweepy Oauth2 flow helper | Completed | Python   |
 | 3 | File joiner | Completed | Go       |
+| 4 | DTMF generator | Completed | Python |
 
