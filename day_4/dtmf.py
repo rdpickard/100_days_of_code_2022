@@ -70,9 +70,9 @@ def get_current_tone(in_data, frame_count, time_info, status):
 
     for key_character in buttons_pressed:
         wave_1 = np.sin(np.arange(wave_length) * (
-                    float(rows_usa_frequencies_in_hz[key_pad[key_character][0]]) * ((math.pi * 2) / rate)))
+                (float(rows_usa_frequencies_in_hz[key_pad[key_character][0]]) * math.pi * 2) / rate))
         wave_2 = np.sin(np.arange(wave_length) * (
-                    float(columns_usa_frequencies_in_hz[key_pad[key_character][1]]) * ((math.pi * 2) / rate)))
+            (float(columns_usa_frequencies_in_hz[key_pad[key_character][1]]) * math.pi * 2) / rate))
 
         waves.append(np.divide(wave_1 + wave_2, 2.0))
 

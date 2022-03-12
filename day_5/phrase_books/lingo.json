@@ -1,0 +1,135 @@
+{
+  "phrase_book_name": "Common radio phrases",
+  "phrase_book_description": "Common expressions used in radio communications",
+  "maintainers": [],
+  "version": "1",
+  "web_location": "",
+  "phrases": [
+    {
+      "phrase": "Roger so far",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Affirmative",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Negative",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Come in",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Go Ahead",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Say Again",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Say all after",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Say all before",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Over",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Out",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Radio check",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "read you loud and clear",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "wilco",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "break break",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Emergency emergency",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "Stand by",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "wait out",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    },
+    {
+      "phrase": "I spell",
+      "language": "",
+      "hint": "",
+      "description": "",
+      "difficulty": 3
+    }
+  ]
+}

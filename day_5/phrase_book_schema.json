@@ -1,0 +1,67 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phrase Book",
+  "type": "object",
+  "properties": {
+    "phrase_book_name": {
+      "type": "string",
+      "description": "Name of this phrasebook"
+    },
+    "phrase_book_description": {
+      "type": "string",
+      "description": "Brief description of the phrases in the list"
+    },
+    "maintainers": {
+      "description": "Who keeps the book up to date",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "web_location": {
+      "type": "string",
+      "description": "URL where this phrasebook can be found"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version of the phrase book as a string. "
+    },
+    "phrases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "phrase": {
+            "description": "The phrase that will be rendered as Morse code by the quiz",
+            "type": "string"
+          },
+          "language": {
+            "description": "The language the phrase is in.",
+            "type": "string"
+          },
+          "hint": {
+            "description": "An optional hint to the content of the phrase",
+            "type": "string"
+          },
+          "description": {
+            "description": "What the phrase is. Usuful for codes or abriviations",
+            "type": "string"
+          },
+          "difficulty": {
+            "description": "Subjective measurement of how hard the phrase may be to interpret.",
+            "type": "number"
+          }
+        },
+        "required": ["phrase"]
+      }
+    }
+  },
+  "required": [
+    "phrase_book_name",
+    "phrase_book_description",
+    "maintainers",
+    "web_location",
+    "version"
+  ]
+}

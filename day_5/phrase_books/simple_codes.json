@@ -1,0 +1,1199 @@
+{
+  "phrase_book_name": "Simple Short Hand Codes",
+  "phrase_book_description": "Two to four letter abbreviation codes for common Morse communications",
+  "maintainers": [],
+    "version": "1",
+  "web_location": "",
+  "phrases": [
+    {
+      "phrase": "30",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "I have no more to send",
+      "difficulty": 2
+    },
+    {
+      "phrase": "73",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Best regards",
+      "difficulty": 2
+    },
+    {
+      "phrase": "88",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Love and kisses",
+      "difficulty": 2
+    },
+    {
+      "phrase": "AA",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "All after",
+      "difficulty": 2
+    },
+    {
+      "phrase": "AB",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "All before",
+      "difficulty": 2
+    },
+    {
+      "phrase": "AM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Amplitude modulation",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BK",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Break, break-in",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BN",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "All between; been",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Separation (add a space)",
+      "difficulty": 2
+    },
+    {
+      "phrase": "B4",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Before",
+      "difficulty": 2
+    },
+    {
+      "phrase": "C",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Yes, correct",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CK",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Check",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "I am closing my station; call",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CQ",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Calling any station",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CU",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "See you",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DA",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Day",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "From; this is",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DN",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Down",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Dear",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DX",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Distance",
+      "difficulty": 2
+    },
+    {
+      "phrase": "EL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Element",
+      "difficulty": 2
+    },
+    {
+      "phrase": "ES",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "And",
+      "difficulty": 2
+    },
+    {
+      "phrase": "FB",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Excellent",
+      "difficulty": 2
+    },
+    {
+      "phrase": "FM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Frequency modulation; from",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GA",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Go ahead; good afternoon",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GB",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Goodbye",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Good",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Good evening",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Going",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Good morning",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GN",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Good night",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GV",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Give",
+      "difficulty": 2
+    },
+    {
+      "phrase": "HH",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Error in sending",
+      "difficulty": 2
+    },
+    {
+      "phrase": "HI",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "The telegraph laugh; high",
+      "difficulty": 2
+    },
+    {
+      "phrase": "HQ",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Headquarters",
+      "difficulty": 2
+    },
+    {
+      "phrase": "HR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Here; hear",
+      "difficulty": 2
+    },
+    {
+      "phrase": "HV",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Have",
+      "difficulty": 2
+    },
+    {
+      "phrase": "HW",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "How, how copy?",
+      "difficulty": 2
+    },
+    {
+      "phrase": "LV",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Leave",
+      "difficulty": 2
+    },
+    {
+      "phrase": "MA",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Milliamperes",
+      "difficulty": 2
+    },
+    {
+      "phrase": "N",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "No; negative; incorrect",
+      "difficulty": 2
+    },
+    {
+      "phrase": "ND",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Nothing doing",
+      "difficulty": 2
+    },
+    {
+      "phrase": "NM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "No more",
+      "difficulty": 2
+    },
+    {
+      "phrase": "NR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Number",
+      "difficulty": 2
+    },
+    {
+      "phrase": "NW",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Now; I resume transmission",
+      "difficulty": 2
+    },
+    {
+      "phrase": "OB",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Old boy",
+      "difficulty": 2
+    },
+    {
+      "phrase": "OC",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Old chap",
+      "difficulty": 2
+    },
+    {
+      "phrase": "OM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Old man",
+      "difficulty": 2
+    },
+    {
+      "phrase": "OP",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Operator",
+      "difficulty": 2
+    },
+    {
+      "phrase": "OT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Oldtimer; old top",
+      "difficulty": 2
+    },
+    {
+      "phrase": "PT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Point",
+      "difficulty": 2
+    },
+    {
+      "phrase": "PX",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Press",
+      "difficulty": 2
+    },
+    {
+      "phrase": "R",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Received as transmitted; are; decimal point",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RC",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Ragchew",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Concerning; regarding",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RX",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Receive, receiver",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SS",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Sweepstakes",
+      "difficulty": 2
+    },
+    {
+      "phrase": "T",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Zero",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Transmit",
+      "difficulty": 2
+    },
+    {
+      "phrase": "T/R",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Transmit/receive",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "That",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TU",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Thank you",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TX",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Transmitter; transmit",
+      "difficulty": 2
+    },
+    {
+      "phrase": "U",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "You",
+      "difficulty": 2
+    },
+    {
+      "phrase": "VY",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Very",
+      "difficulty": 2
+    },
+    {
+      "phrase": "W",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Watts",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WA",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Word after",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WB",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Word before",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Word",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Well; will",
+      "difficulty": 2
+    },
+    {
+      "phrase": "YL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Young lady",
+      "difficulty": 2
+    },
+    {
+      "phrase": "YR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Year",
+      "difficulty": 2
+    },
+    {
+      "phrase": "ABT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "About",
+      "difficulty": 2
+    },
+    {
+      "phrase": "ADEE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Addressee",
+      "difficulty": 2
+    },
+    {
+      "phrase": "ADR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Address",
+      "difficulty": 2
+    },
+    {
+      "phrase": "AGN",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Again",
+      "difficulty": 2
+    },
+    {
+      "phrase": "ANT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Antenna",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BCI",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Broadcast interference",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BCL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Broadcast listener",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BCNU",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Be seeing you",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BTR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Better",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BUG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Semi-automatic key",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CFM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Confirm; I confirm",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CLBK",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Callbook",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CLD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Called",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CLG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Calling",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CNT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Can't",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CONDX",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Conditions",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CKT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Circuit",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CUL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "See you later",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CUM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Come",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DIFF",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Difference",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DLD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Delivered",
+      "difficulty": 2
+    },
+    {
+      "phrase": "DLVD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Delivered",
+      "difficulty": 2
+    },
+    {
+      "phrase": "FER",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "For",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GND",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Ground",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GUD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Good",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GESS",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Guess",
+      "difficulty": 2
+    },
+    {
+      "phrase": "GVG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Giving",
+      "difficulty": 2
+    },
+    {
+      "phrase": "HPE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Hope",
+      "difficulty": 2
+    },
+    {
+      "phrase": "IMI",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Repeat; say again",
+      "difficulty": 2
+    },
+    {
+      "phrase": "INFO",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Info",
+      "difficulty": 2
+    },
+    {
+      "phrase": "LID",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "A poor operator",
+      "difficulty": 2
+    },
+    {
+      "phrase": "LNG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Long",
+      "difficulty": 2
+    },
+    {
+      "phrase": "LTR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Later; letter",
+      "difficulty": 2
+    },
+    {
+      "phrase": "LVG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Leaving",
+      "difficulty": 2
+    },
+    {
+      "phrase": "MILL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Typewriter",
+      "difficulty": 2
+    },
+    {
+      "phrase": "MSG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Message; prefix to radiogram",
+      "difficulty": 2
+    },
+    {
+      "phrase": "NCS",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Net control station",
+      "difficulty": 2
+    },
+    {
+      "phrase": "NIL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Nothing; I have nothing for you",
+      "difficulty": 2
+    },
+    {
+      "phrase": "OPR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Operator",
+      "difficulty": 2
+    },
+    {
+      "phrase": "PBL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Preamble",
+      "difficulty": 2
+    },
+    {
+      "phrase": "PKG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Package",
+      "difficulty": 2
+    },
+    {
+      "phrase": "PSE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Please",
+      "difficulty": 2
+    },
+    {
+      "phrase": "PWR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Power",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RCD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Received",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RCVR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Receiver",
+      "difficulty": 2
+    },
+    {
+      "phrase": "REF",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Refer to; referring to; reference",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RFI",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Radio frequency interference",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RIG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Station equipment",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RPT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Repeat, report",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RTTY",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Radio teletype",
+      "difficulty": 2
+    },
+    {
+      "phrase": "RST",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Readability, strength, tone",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SASE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Self-addressed, stamped envelope",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SED",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Said",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SEZ",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Says",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SGD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Signed",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SIG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Signature; signal",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SINE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Operator's personal initials or nickname",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SKED",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Schedule",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SRI",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Sorry",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SSB",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Single sideband",
+      "difficulty": 2
+    },
+    {
+      "phrase": "STN",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Station",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SUM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Some",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SVC",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Service; prefix to service message",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TFC",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Traffic",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TMW",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Tomorrow",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TNX",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Thanks",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TRIX",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Tricks",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TTS",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "That is",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TVI",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Television interference",
+      "difficulty": 2
+    },
+    {
+      "phrase": "TXT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Text",
+      "difficulty": 2
+    },
+    {
+      "phrase": "UR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Your; you're",
+      "difficulty": 2
+    },
+    {
+      "phrase": "URS",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Yours",
+      "difficulty": 2
+    },
+    {
+      "phrase": "VFB",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Very fun business",
+      "difficulty": 2
+    },
+    {
+      "phrase": "VFO",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Variable frequency oscillator",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WDS",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Words",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WID",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "With",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WKD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Worked",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WKG",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Working",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WPM",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Words per minute",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WRD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Word",
+      "difficulty": 2
+    },
+    {
+      "phrase": "WUD",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Would",
+      "difficulty": 2
+    },
+    {
+      "phrase": "XCVR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Transceiver",
+      "difficulty": 2
+    },
+    {
+      "phrase": "XMTR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Transmitter",
+      "difficulty": 2
+    },
+    {
+      "phrase": "XTAL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Crystal",
+      "difficulty": 2
+    },
+    {
+      "phrase": "XYL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Wife",
+      "difficulty": 2
+    },
+    {
+      "phrase": "AR",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "End of message",
+      "difficulty": 2
+    },
+    {
+      "phrase": "AS",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Stand by",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BK",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Invite receiving station to transmit",
+      "difficulty": 2
+    },
+    {
+      "phrase": "BT",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Pause; break for text",
+      "difficulty": 2
+    },
+    {
+      "phrase": "KA",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Beginning of message",
+      "difficulty": 2
+    },
+    {
+      "phrase": "KN",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "End of the transmission",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CL",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Going off the air (clear)",
+      "difficulty": 2
+    },
+    {
+      "phrase": "CQ",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Calling any amateur radio station",
+      "difficulty": 2
+    },
+    {
+      "phrase": "K",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Go, invite any station to transmit",
+      "difficulty": 2
+    },
+    {
+      "phrase": "KN",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Go only, invite a specific station to transmit",
+      "difficulty": 2
+    },
+    {
+      "phrase": "R",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "All received OK",
+      "difficulty": 2
+    },
+    {
+      "phrase": "SK",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "End of contact (sent before call)",
+      "difficulty": 2
+    },
+    {
+      "phrase": "VE",
+      "language": "Standard Morse Code Abbreviations",
+      "hint": "",
+      "description": "Understood",
+      "difficulty": 2
+    }
+  ]
+}
