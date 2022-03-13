@@ -4,11 +4,15 @@ A self-issued challenge to write a small program every day for one hundred days.
 
 ---
 
-| Day | Goal | Result | Language |
-|-----|------|-------- |----------|
-| 1 | OpenCV eye deteciton false positive reduction | Completed | Python   |
-| 2 | Tweepy Oauth2 flow helper | Completed | Python   |
-| 3 | File joiner | Completed | Go       |
-| 4 | DTMF generator | Completed | Python |
-| 5| Morse Code quizzer | Completed | Python |
+| Day | Goal                                          | Result | Language |
+|----|-----------------------------------------------|-------- |----------|
+| 1  | OpenCV eye deteciton false positive reduction | Completed | Python   |
+| 2  | Tweepy Oauth2 flow helper                     | Completed | Python   |
+| 3  | File joiner                                   | Completed | Go       |
+| 4  | DTMF generator                                | Completed | Python |
+| 5  | Morse Code quizzer                            | Completed | Python |
+| 6  | Streak Image generator                        | Completed | Python |
 
+
+
+![](/Users/pickard/projects/100_days_of_code_2022/media/streak.jpg)
