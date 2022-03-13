@@ -3,6 +3,7 @@
 A self-issued challenge to write a small program every day for one hundred days.
 
 ---
+![day_6 project lol](media/streak.jpg)
 
 | Day | Goal                                          | Result | Language |
 |----|-----------------------------------------------|-------- |----------|
@@ -15,4 +16,3 @@ A self-issued challenge to write a small program every day for one hundred days.
 
 
 
-![](media/streak.jpg)
