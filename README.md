@@ -15,4 +15,4 @@ A self-issued challenge to write a small program every day for one hundred days.
 
 
 
-![](/Users/pickard/projects/100_days_of_code_2022/media/streak.jpg)
+![](media/streak.jpg)
