@@ -13,6 +13,8 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 4  | DTMF generator                                | Completed | Python |
 | 5  | Morse Code quizzer                            | Completed | Python |
 | 6  | Streak Image generator                        | Completed | Python |
+| 7 | "hello world" of Rust and Cargo | Completed | Rust |
+
 
 
 
