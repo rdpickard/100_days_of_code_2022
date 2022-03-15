@@ -10,6 +10,7 @@ then
 fi
 
 mkdir -p $PWD/media/
+git add $PWD/media/
 
 # Create the streak image
 python $PWD/day_6/commit_streak_image_generator.py $PWD  $PWD/media/streak.jpg
