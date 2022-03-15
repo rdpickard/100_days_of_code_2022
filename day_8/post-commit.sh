@@ -9,6 +9,8 @@ then
   exit
 fi
 
+files=`git diff --cached --name-status`
+echo $files
 
 git add $PWD/media/streak.jpg
 git commit --amend --no-verify $PWD/media/streak.jpg
