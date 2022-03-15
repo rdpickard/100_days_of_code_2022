@@ -9,7 +9,6 @@ then
   exit
 fi
 
-diff_v= exec git diff --cached --name-only --diff-filter=ACM
-echo $diff_v
+
 git add $PWD/media/streak.jpg
 git commit --amend --no-verify $PWD/media/streak.jpg
