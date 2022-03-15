@@ -9,6 +9,7 @@ then
   exit
 fi
 
+git diff --cached --name-only --diff-filter=ACM
+
 git add $PWD/media/streak.jpg
-echo "herer"
 git commit --amend --no-verify $PWD/media/streak.jpg
