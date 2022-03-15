@@ -10,4 +10,5 @@ then
 fi
 
 git add $PWD/media/streak.jpg
+echo "herer"
 git commit --amend --no-verify $PWD/media/streak.jpg
