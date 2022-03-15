@@ -9,5 +9,8 @@ then
   exit
 fi
 
+# Create the streak image
 python $PWD/day_6/commit_streak_image_generator.py $PWD  $PWD/media/streak.jpg
 
+# Commit the streak image
+#git commit --amend --no-verify --message "new streak image" $PWD/media/streak.jpg
