@@ -9,6 +9,8 @@ then
   exit
 fi
 
+touch .commit
+
 mkdir -p $PWD/media/
 
 # Create the streak image
