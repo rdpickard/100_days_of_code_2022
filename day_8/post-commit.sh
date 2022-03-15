@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Creating commit streak image"
+echo "Commiting streak image"
 PYTHON_ENV=$(python -c "import sys; sys.stdout.write('1') if hasattr(sys, 'real_prefix') or (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix) else sys.stdout.write('0')")
 
 if [ $PYTHON_ENV -eq 0 ]
