@@ -9,4 +9,4 @@ then
   exit
 fi
 
-git commit --amend --no-verify $PWD/media/streak.jpg
+git commit --no-verify --amend  $PWD/media/streak.jpg
