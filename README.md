@@ -15,7 +15,7 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 6  | Streak Image generator                                  | Completed  | Python |
 | 7 | "hello world" of Rust and Cargo                         | Completed  | Rust |
 | 8 | Git commit hooks to auto generate "N day streak!" image | Completed  | Shell script |
-| 9 | Tonelli Shanks algorithm  Unfinished                    | Rust |
+| 9 | Tonelli Shanks algorithm  | Unfinished | Rust |
 
 
 
