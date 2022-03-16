@@ -37,6 +37,7 @@ https://en.wikipedia.org/wiki/Legendre_symbol
 
 There is a Rust mod pow, but it works with a BigInt. Keeping it at u32 now, even though it only works with small values before overflow
 
+(NOOP)
 
 ### If I was to do more
 
