@@ -1,0 +1,11 @@
+[package]
+name = "tonelli_shanks"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+modpow = "1.0.1"
+num-traits = "0.2.14"
+num-bigint = "0.4.3"
