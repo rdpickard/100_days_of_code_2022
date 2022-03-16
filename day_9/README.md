@@ -29,6 +29,8 @@ I am trying to remember the math while also trying to figure out how Rust works.
 Made a little progress with getting value/reference passing back into my head after using python forever. Also wrote some
 functions in Rust that I hadn't to date.
 
+![](media/pointer_meme.jpg)
+
 ### Notes
 
 https://en.wikipedia.org/wiki/Legendre_symbol
