@@ -1,0 +1,58 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Person",
+  "type": "object",
+  "required": [ "resultCount", "results" ],
+  "properties": {
+    "resultCount": {
+      "type": "number"
+    },
+    "results": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/podcast-track" }
+    }
+  },
+  "$defs": {
+    "podcast-track": {
+      "type": "object",
+      "required": ["trackViewUrl", "trackName", "artistName"],
+      "properties": {
+        "wrapperType": {"type": "string"},
+        "kind": {"type": "string"},
+        "artistId": {"type": "number"},
+        "collectionId": {"type": "number"},
+        "trackId": {"type": "number"},
+        "artistName": {"type": "string"},
+        "collectionName": {"type": "string"},
+        "trackName": {"type": "string"},
+        "collectionCensoredName": {"type": "string"},
+        "trackCensoredName": {"type": "string"},
+        "artistViewUrl": {"type": "string"},
+        "collectionViewUrl": {"type": "string"},
+        "feedUrl": {"type": "string"},
+        "trackViewUrl": {"type": "string"},
+        "artworkUrl30": {"type": "string"},
+        "artworkUrl60": {"type": "string"},
+        "artworkUrl100": {"type": "string"},
+        "collectionPrice": {"type": "number"},
+        "trackPrice": {"type": "number"},
+        "trackRentalPrice": {"type": "number"},
+        "collectionHdPrice": {"type": "number"},
+        "trackHdPrice": {"type": "number"},
+        "trackHdRentalPrice": {"type": "number"},
+        "releaseDate": {"type": "string"},
+        "collectionExplicitness": {"type": "string"},
+        "trackExplicitness": {"type": "string"},
+        "trackCount": {"type": "number"},
+        "country": {"type": "string"},
+        "currency": {"type": "string"},
+        "primaryGenreName": {"type": "string"},
+        "contentAdvisoryRating": {"type": "string"},
+        "artworkUrl600": {"type": "string"},
+        "genreIds": {"type": "array", "items":  {"type": "string"}},
+        "genres": {"type": "array", "items": {"type": "string"} }
+      }
+    }
+  }
+}
