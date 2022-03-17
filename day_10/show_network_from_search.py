@@ -319,7 +319,6 @@ def update_podcasts_corpus_from_itunes_recommendation(recommendation_json):
 
     try:
         podcast = session.query(PodcastNode).filter(PodcastNode.apple_podcast_id == recommendation_json["apple_podcast_id"]).one()
-        return podcast.id
     except sqlalchemy.orm.exc.NoResultFound:
         podcast = PodcastNode(apple_podcast_id=recommendation_json["apple_podcast_id"],
                               apple_podcast_name=recommendation_json["podcast_name"])
@@ -330,11 +329,18 @@ def update_podcasts_corpus_from_itunes_recommendation(recommendation_json):
         group = session.query(GroupNode).filter(GroupNode.apple_artist_name == recommendation_json["artist_name"]).one()
     except sqlalchemy.orm.exc.NoResultFound:
         group = GroupNode(apple_artist_name = recommendation_json["artist_name"])
+        session.add(group)
+        session.commit()
 
-    podcast_artist_edge = PodcastArtistEdge(podcast_id=podcast.id, group_id=group.id,
-                                            first_seen_utc_timestamp=arrow.now("UTC").datetime)
-    session.add(podcast_artist_edge)
-    session.commit()
+    try:
+        podcast_artist_edge = session.query(PodcastArtistEdge).filter(PodcastArtistEdge.podcast_id == podcast.id).filter(PodcastArtistEdge.group_id == group.id).one()
+    except sqlalchemy.orm.exc.NoResultFound:
+        podcast_artist_edge = PodcastArtistEdge(podcast_id=podcast.id, group_id=group.id,
+                                                first_seen_utc_timestamp=arrow.now("UTC").datetime)
+        session.add(podcast_artist_edge)
+        session.commit()
+
+    print("PodcastArtistEdge {} {}".format(podcast_artist_edge.podcast_id, podcast_artist_edge.group_id))
 
     return podcast.id
 
@@ -525,7 +531,12 @@ for edge in search_recommendation_edges:
     recommended_podcasts_edges = my_session.query(PodcastToPodcastRecommendationEdge).filter(PodcastToPodcastRecommendationEdge.from_podcast_id == podcast.id)
     for recommended_podcast_edge in recommended_podcasts_edges:
         podcast = my_session.query(PodcastNode).filter(PodcastNode.id == recommended_podcast_edge.to_podcast_id).one()
-        print("\t{}".format(podcast.apple_podcast_name))
+        group_edge = my_session.query(PodcastArtistEdge).filter(PodcastArtistEdge.podcast_id == podcast.id).one()
+
+        group = my_session.query(GroupNode).filter(GroupNode.id == group_edge.group_id).one()
+
+        recommendation_stack = my_session.query(RecommendationStackDocument).filter(RecommendationStackDocument.id == recommended_podcast_edge.recommendation_stack).one()
+        print("\t{} ({}) [{}]".format(podcast.apple_podcast_name, group.apple_artist_name, recommendation_stack.recommendation_chosen_characteristic))
 
 
 sys.exit()
