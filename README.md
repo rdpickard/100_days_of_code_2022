@@ -17,6 +17,7 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 8        | Git commit hooks to auto generate "N day streak!" image | Completed  | Shell script |
 | 9        | Tonelli Shanks algorithm  | Unfinished | Rust |
 |🎉10🎉| Apple itunes podcast recommendation scraper | Completed | Python |
+| 11 | Markdown lexer and parser | Partial | Python | 
 
 
 
