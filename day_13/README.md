@@ -16,21 +16,38 @@ The [day_6](../day_6/) and [day_8](../day_8) are kind of broken and it's annoyin
 The goal is to for automatically create a image that shows the number of uninterrupted days I've added to this repository and update the repository with that image
 
 Example image from day_6 project
-![](media/streak.jpg)
+![](media/old_streak.jpg)
 
 ### Results
 
+Much better. 
+
+The 10-day streak limit was a bug in my day_6 script. There was an actual gap because the git timestamps were in UTC, not
+local time. So when I had commited a bit later in the evening the UTC had already rolled over. 
+
+Also there was a bug that would count the oldest streak as the most recent. Commits are returned from newest to oldest in the git module
+I was using. I just reversed the list.
+
+The commit hook scripts are still not great but I used a better method to work around 'post-commit' always being run, even if --no-verify was
+passed to commit command.
+
+Lastly I added little characters, one for each day in the streak to the image. It's dumb in a way i like.
 
 ---
 
 ### If I was to do more
-
 ---
+
+- add more dumb 'pip' characters to my streak image.
+- make the post/pre hook scripts better
+
 
 ### Notes
 
 ---
 
 ### Example 
+
+![](media/streak.jpg)
 
 ---

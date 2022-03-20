@@ -26,6 +26,10 @@ for commit in list(repo.iter_commits('main')):
         commit_days.append(day)
 
 last_day = commit_days[0]
+
+# The commit order is from most recent to oldest. Reverse the list to get the most recent streak
+commit_days.reverse()
+
 max_streak = 1
 for commit_day in commit_days[1:]:
     if commit_day == last_day.shift(days=-1):
@@ -34,9 +38,7 @@ for commit_day in commit_days[1:]:
         max_streak = 1
     last_day = commit_day
 
-#pip_dir = "media"
 pip_files = [os.path.join(pip_dir, f) for f in os.listdir(pip_dir) if f.startswith("pip_") and f.endswith(".png") and os.path.isfile(os.path.join(pip_dir, f))]
-print(pip_files)
 
 pips_html_image_tags_as_string = []
 for _ in range(0, max_streak):
