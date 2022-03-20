@@ -14,6 +14,7 @@ jsonschema==4.4.0
 numpy==1.22.3
 oauthlib==3.2.0
 opencv-python==4.5.5.62
+ply==3.11
 prompt-toolkit==3.0.28
 PyAudio==0.2.11
 pynput==1.7.6

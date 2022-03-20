@@ -20,6 +20,9 @@ for commit in list(repo.iter_commits('main')):
     if day not in commit_days:
         commit_days.append(day)
 
+for cd in commit_days:
+    print(cd)
+print(len(commit_days))
 last_day = commit_days[0]
 max_streak = 1
 for commit_day in commit_days[1:]:
@@ -29,5 +32,6 @@ for commit_day in commit_days[1:]:
         max_streak = 1
     last_day = commit_day
 
-imgkit.from_string(f'<h1>{max_streak} day streak!</h1>', sys.argv[2])
+print("streak is {}".format(max_streak))
+#imgkit.from_string(f'<h1>{max_streak} day streak!</h1>', sys.argv[2])
 
