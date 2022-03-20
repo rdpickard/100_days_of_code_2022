@@ -32,7 +32,7 @@ commit_days.reverse()
 
 max_streak = 1
 for commit_day in commit_days[1:]:
-    if commit_day == last_day.shift(days=-1):
+    if commit_day == last_day.shift(days=1):
         max_streak += 1
     else:
         max_streak = 1
