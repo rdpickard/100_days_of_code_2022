@@ -27,7 +27,7 @@ for commit in list(repo.iter_commits('main')):
 
 last_day = commit_days[0]
 
-# The commit order is from most recent to oldest. Reverse the list to get the most recent streak
+# The commit order is from most recent to oldest. Reverse the list to get the most recent
 commit_days.reverse()
 
 max_streak = 1
