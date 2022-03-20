@@ -1,0 +1,7 @@
+#!/bin/sh
+
+streak_in_commit=$(git diff origin/main..main | grep "diff --git" | grep streak.jpg)
+if [ -z "$streak_in_commit" ]
+then
+  git commit --no-verify --amend  $PWD/media/streak.jpg
+fi
