@@ -44,6 +44,12 @@ Lastly I added little characters, one for each day in the streak to the image. I
 
 ### Notes
 
+First time in the _100 days_ I am returning to a previous day's program. I'm not totally OK with it because I don't want to keep returning 
+to older stuff. Part of the challenge is to be able to mentally move on from something I'm not satisfied with. 
+
+I'm giving myself a pass on this because the result is supposed to be applied to all the upcoming days. To make the next days a little better.
+So fixing something that would have annoyed me every day forward is worth going back.
+
 ---
 
 ### Example 

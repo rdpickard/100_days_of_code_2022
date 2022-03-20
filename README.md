@@ -5,6 +5,7 @@ A self-issued challenge to write a small program every day for one hundred days.
 ---
 ![day_6 project lol](media/streak.jpg)
 
+
 | Day    | Goal                                                    | Result     | Language     |
 |--------|---------------------------------------------------------|------------|--------------|
 | 1      | OpenCV eye deteciton false positive reduction           | Completed  | Python       |
@@ -18,7 +19,9 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 9      | Tonelli Shanks algorithm                                | Unfinished | Rust         |
 | 🎉10🎉 | Apple itunes podcast recommendation scraper             | Completed  | Python       |
 | 11     | Markdown lexer and parser                               | Partial    | Python       | 
-| 12     | Hello World in arm assembly                             | Completed  | arm64        | 
+| 12     | Hello World in arm assembly                             | Completed  | arm64        |
+| 13| Streak image generator and git hook redo | Completed | Python/shell |
+
 
 
 
