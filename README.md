@@ -21,6 +21,7 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 11     | Markdown lexer and parser                               | Partial    | Python       | 
 | 12     | Hello World in arm assembly                             | Completed  | arm64        |
 | 13| Streak image generator and git hook redo | Completed | Python/shell |
+| 14 | Rust primitives | Completed | Rust | 
 
 
 
