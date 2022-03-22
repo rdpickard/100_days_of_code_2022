@@ -6,22 +6,23 @@ A self-issued challenge to write a small program every day for one hundred days.
 ![day_6 project lol](media/streak.jpg)
 
 
-| Day    | Goal                                                    | Result     | Language     |
-|--------|---------------------------------------------------------|------------|--------------|
-| 1      | OpenCV eye deteciton false positive reduction           | Completed  | Python       |
-| 2      | Tweepy Oauth2 flow helper                               | Completed  | Python       |
-| 3      | File joiner                                             | Completed  | Go           |
-| 4      | DTMF generator                                          | Completed  | Python       |
-| 5      | Morse Code quizzer                                      | Completed  | Python       |
-| 6      | Streak Image generator                                  | Completed  | Python       |
-| 7      | "hello world" of Rust and Cargo                         | Completed  | Rust         |
-| 8      | Git commit hooks to auto generate "N day streak!" image | Completed  | Shell script |
+| Day    | Goal                                                    | Result    | Language     |
+|--------|---------------------------------------------------------|-----------|--------------|
+| 1      | OpenCV eye deteciton false positive reduction           | Completed | Python       |
+| 2      | Tweepy Oauth2 flow helper                               | Completed | Python       |
+| 3      | File joiner                                             | Completed | Go           |
+| 4      | DTMF generator                                          | Completed | Python       |
+| 5      | Morse Code quizzer                                      | Completed | Python       |
+| 6      | Streak Image generator                                  | Completed | Python       |
+| 7      | "hello world" of Rust and Cargo                         | Completed | Rust         |
+| 8      | Git commit hooks to auto generate "N day streak!" image | Completed | Shell script |
 | 9      | Tonelli Shanks algorithm                                | Unfinished | Rust         |
-| 🎉10🎉 | Apple itunes podcast recommendation scraper             | Completed  | Python       |
-| 11     | Markdown lexer and parser                               | Partial    | Python       | 
-| 12     | Hello World in arm assembly                             | Completed  | arm64        |
+| 🎉10🎉 | Apple itunes podcast recommendation scraper             | Completed | Python       |
+| 11     | Markdown lexer and parser                               | Partial   | Python       | 
+| 12     | Hello World in arm assembly                             | Completed | arm64        |
 | 13| Streak image generator and git hook redo | Completed | Python/shell |
 | 14 | Rust primitives | Completed | Rust | 
+| 15 | Machine learning based dog detector| Completed | Python | 
 
 
 
