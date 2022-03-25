@@ -1,0 +1,41 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Indexed Label Set",
+  "type": "object",
+  "properties": {
+    "indexed label set": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the set"
+        },
+        "source": {
+          "type": "string",
+          "description": "Where the set came from. For reference"
+        },
+        "version": {
+          "type": "string",
+          "description": "The version of this set the indexed labels represent"
+        },
+        "description": {
+          "type": "string",
+          "description": "Human readable information about this set. For reference"
+        },
+        "data": {
+          "type": "object",
+          "patternProperties": {
+            "[0-9]+": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}
