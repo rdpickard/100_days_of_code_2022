@@ -128,13 +128,94 @@ class LabeledImageAPIResource(flask_restful.Resource):
 
 class LabeledImageLabelAPIResource(flask_restful.Resource):
 
-    def get(self):
+    def get(self, image_id, set_name=None, index_id=None):
+
+        label_sets_by_id = dict()
+
+        labels_json = {}
+
+        img = LabeledImageModel.query.filter(LabeledImageModel.id == image_id).one_or_none()
+        if img is None:
+            response = flask.jsonify({"message": f"no image with id {image_id} found"})
+            response.status_code = 406
+            return response
+
+        if set_name is not None:
+            label_set = IndexedLabelSetModel.query.filter(IndexedLabelSetModel.readable_name == set_name).one_or_none()
+            if label_set is None:
+                response = flask.jsonify({"message": f"no indexed label set with name {set_name} found"})
+                response.status_code = 406
+                return response
+
+            label_sets_by_id[label_set.id] = label_set
+            print(label_set.readable_name)
+
+        else:
+            for label_set in IndexedLabelSetModel.query.all():
+                # TODO Revisit loading all label sets into memory. Could be done selectively for only label sets that the specified image has associated with it
+                label_sets_by_id[label_set.id] = label_set
+
+        for label in LabeledImageLabelModel.query.filter(LabeledImageLabelModel.labeled_image_id == img.id).filter(LabeledImageLabelModel.indexed_label_set_id.in_(list(label_sets_by_id.keys()))).all():
+
+            set_name = label_sets_by_id[label.indexed_label_set_id].readable_name
+            if set_name not in labels_json.keys():
+                labels_json[set_name] = list()
+            labels_json[set_name].append(label.indexed_label_set_label_id)
+
+        response = flask.jsonify(labels_json)
+        return response
+
+    def post(self, image_id, set_name):
+
+        if not flask.request.is_json:
+            response = flask.jsonify({"message": f"Expected JSON data in post, none found"})
+            response.status_code = 406
+            return response
+
+        image_label_ids_schema_file_path = "schemas/image_label_id_from_indexed_label_set_schema.json"
+
+        with open(image_label_ids_schema_file_path) as schema_file:
+            image_label_ids_schema = json.loads(schema_file.read())
+
+        try:
+            jsonschema.validate(flask.request.json, image_label_ids_schema)
+        except Exception as e:
+            response = flask.jsonify(
+                {"message": f"JSON data failed to validate against schema {image_label_ids_schema_file_path} with error {e}"})
+            response.status_code = 406
+            return response
+
+        img = LabeledImageModel.query.filter(LabeledImageModel.id == image_id).one_or_none()
+        if img is None:
+            response = flask.jsonify({"message": f"no image with id {image_id} found"})
+            response.status_code = 406
+            return response
+        label_set = IndexedLabelSetModel.query.filter(IndexedLabelSetModel.readable_name == set_name).one_or_none()
+        if label_set is None:
+            response = flask.jsonify({"message": f"no indexed label set with name {set_name} found"})
+            response.status_code = 406
+            return response
+
+        count = 0
+
+        for label_id in flask.request.json:
+            # TODO make sure the label id is valid for the indexed label set
+            img_label = LabeledImageLabelModel(labeled_image_id=img.id,
+                                               indexed_label_set_id=label_set.id,
+                                               indexed_label_set_label_id=label_id)
+
+            db.session.add(img_label)
+            db.session.commit()
+            count += 1
+
+        response = flask.jsonify({"message": f"OK {count} labels applied to image"})
+        response.status_code = 201
+        return response
+
+    def put(self, image_id, set_name):
         pass
 
-    def post(self):
-        pass
-
-    def put(self):
+    def delete(self, image_id, set_name=None):
         pass
 
 
@@ -156,9 +237,7 @@ class IndexedLabelSetAPIResource(flask_restful.Resource):
         pass
 
     def post(self):
-        print(len(flask.request.files))
-        print(flask.request.files.keys())
-        print('file' in flask.request.files.keys())
+
 
         if len(flask.request.files) >= 1 and 'file' in flask.request.files.keys():
             # JSON was uploaded as a file
@@ -226,6 +305,7 @@ api.add_resource(LabeledImageAPIResource, "/api/labeled_image/<string:image_id>"
                                           "/api/labeled_image/")
 
 api.add_resource(LabeledImageImageAPIResource, "/api/labeled_image/<string:image_id>/image")
+
 api.add_resource(LabeledImageLabelAPIResource, "/api/labeled_image/<string:image_id>/labels",
                                                "/api/labeled_image/<string:image_id>/labels/<string:set_name>")
 
