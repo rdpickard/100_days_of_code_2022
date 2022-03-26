@@ -238,7 +238,6 @@ class IndexedLabelSetAPIResource(flask_restful.Resource):
 
     def post(self):
 
-
         if len(flask.request.files) >= 1 and 'file' in flask.request.files.keys():
             # JSON was uploaded as a file
             up_loaded_file = flask.request.files['file']
