@@ -30,3 +30,7 @@ Have to install [geos package](https://trac.osgeo.org/geos/)
 ### Example 
 
 ---
+
+Got basemap to compile and go
+
+![](media/sc.png)
