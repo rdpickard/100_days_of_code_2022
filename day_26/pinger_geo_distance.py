@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 
 from ripe.atlas.sagan import DnsResult, PingResult
@@ -9,7 +10,7 @@ atlas_job_id = 39945669
 
 atlas_api_call_url = f"https://atlas.ripe.net/api/v2/measurements/{atlas_job_id}/results/"
 atlas_api_response = requests.get(f"https://atlas.ripe.net/api/v2/measurements/{atlas_job_id}/results/",
-                                 params={"key": "e9261474-fb28-43a4-8d20-3af4b6487ebb"})
+                                 params={"key": os.environ.get("ATLAS_API_KEY")})
 
 ping_results_json = None
 
