@@ -31,5 +31,5 @@ Worked. I may hate Linux a little more.
 
 ---
 
-![](media/sc1.png)
+![](media/sc1.jpg)
 
