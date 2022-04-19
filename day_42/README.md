@@ -32,6 +32,10 @@ array allocate 375 ns
 10000000 linse in 3701054875 ns with  max check with bitset
 2147483600 max val
 
+10000000 linse in 4295862208 ns with  NO max check with bitset
+10000000 linse in 3974760292 ns with  NO max check with bitset
+10000000 linse in 3961208209 ns with  NO max check with bitset
+
 
 
 ### Example 

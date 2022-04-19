@@ -23,7 +23,7 @@ func main() {
 
 	start := time.Now()
 
-	i := 0
+	//i := 0
 	scanner := bufio.NewScanner(file)
 	max_val := 0
 	c_val := 0
@@ -34,10 +34,10 @@ func main() {
 		c_val, _ = strconv.Atoi(scanner.Text())
 		//fmt.Printf("%d\n", c_val)
 		bits.SetBit(&bits, c_val, 1)
-		if c_val > max_val {
-			max_val = c_val
-		}
-		i += 1
+		//if c_val > max_val {
+		//	max_val = c_val
+		//}
+		//i += 1
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -48,7 +48,7 @@ func main() {
 
 	elapsed := time_end.Sub(start).Nanoseconds()
 
-	fmt.Printf("%d linse in %d ns with  max check with bitset\n", i, elapsed)
+	fmt.Printf("[not tracked]] linse in %d ns with  NO max check with bitset\n", elapsed)
 	fmt.Printf("%d max val\n", max_val)
 
 }
