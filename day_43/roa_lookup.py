@@ -77,7 +77,7 @@ def asn_and_route_for_ip(ip_address):
 
     jsonschema.validate(ipdata_ip_response.json(), ipdata_ip_response_schema)
 
-    return ipdata_ip_response.json()["asn"], ipdata_ip_response.json()["route"]
+    return ipdata_ip_response.json()["route"], ipdata_ip_response.json()["asn"]
 
 
 def roas_for_prefix(prefix, asn):
@@ -110,14 +110,21 @@ if service_api_key_ipdata is None:
     print("IPDATA_API_KEY env variable not set")
     sys.exit(-1)
 
+for query_ip in ["82.21.211.1", "181.189.100.1", "37.72.140.1", "177.131.135.1"]:
+    route, asn = asn_and_route_for_ip(query_ip)
+    status, validating_roas, validator = roas_for_prefix(route, asn)
+    print(f"\t{query_ip} => {asn} {route} -> ROA {status}")
+
+"""
 try:
     a_aaaa_cname_mappings = a_aaaa_cname_for_fqdn("twitter.com")
     for query_fqdn, query_ips in a_aaaa_cname_mappings.items():
         print(f"{query_fqdn}")
         for query_ip in query_ips:
-            asn, route = asn_and_route_for_ip(query_ip)
+            route, asn = asn_and_route_for_ip(query_ip)
             status, validating_roas, validator = roas_for_prefix(route, asn)
             print(f"\t{query_ip} => {asn} {route} -> ROA {status}")
 except Exception as e:
     print(e)
     sys.exit(-1)
+"""
