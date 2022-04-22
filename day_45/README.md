@@ -1,4 +1,4 @@
-# Pico CTF static challange
+# Pico CTF static and Matryoshka hallange
 
 ---
 ```
@@ -18,7 +18,9 @@ Hidden flag in static
 
 ---
 
-Completed but probably not in the intended way
+Completed static but probably not in the intended way
+
+Matryoshka was a bit more fun
 
 ### If I was to do more
 
