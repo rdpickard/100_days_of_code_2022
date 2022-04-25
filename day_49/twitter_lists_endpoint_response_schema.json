@@ -1,0 +1,75 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Expected response from the Twitter v2 endpoint https://developer.twitter.com/en/docs/twitter-api/lists/list-lookup/api-reference/get-users-id-owned_lists#tab1",
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/twitter_list" }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "result_count": {
+          "type": "integer"
+        },
+        "next_token": {
+          "type": "string"
+        },
+        "previous_token": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "twitter_list": {
+      "title": "Twitter List API",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Twitter list ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of this List"
+        },
+        "username": {
+          "description": "Username of Twitter account",
+          "type": "string"
+        },
+        "created_at": {
+          "description": "Creation time of this List in iso-8601",
+          "type": "string"
+        },
+        "private": {
+          "description": "Indicates if this List has been set to private.",
+          "type": "boolean"
+        },
+        "follower_count": {
+          "type": "number",
+          "description": "Number of users who follow this List"
+        },
+        "member_count": {
+          "type": "number",
+          "description": "Number of users who are a member of this List"
+        },
+        "owner_id": {
+          "type": "number",
+          "description": "Number of users who are a member of this List"
+        },
+        "description": {
+          "description": "A brief description of this List, if the owner provided one",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    }
+  }
+}
