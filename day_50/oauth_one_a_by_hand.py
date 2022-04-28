@@ -36,7 +36,6 @@ prepared = session.prepare_request(req)
 print(prepared.headers)
 
 
-
 print(str(int(datetime.datetime.now().timestamp())))
 response = session.send(prepared)
 
