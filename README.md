@@ -59,6 +59,7 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 50     | Writing OAuth 1.0a by hand                              | Partial    | Python       |
 | 51     | Writing OAuth 1.0a by hand                              | Partial    | Python       |
 | 52     ||||
+| 53     | Conway life over HTTP                                   | Completed  | Go           | 
 
 
 
