@@ -29,6 +29,54 @@ func main() {
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
 
+func ContinuousPlanePixelValue(img *image.Paletted, x int, y int) uint8 {
+
+	bounds := img.Bounds()
+
+	value_x := x
+	value_y := y
+
+	if value_x < bounds.Min.X {
+		value_x = bounds.Max.X - 1
+	}
+	if value_x >= bounds.Max.X {
+		value_x = bounds.Min.X
+	}
+
+	if value_y < bounds.Min.Y {
+		value_y = bounds.Max.Y - 1
+	}
+	if value_y >= bounds.Max.Y {
+		value_y = bounds.Min.Y
+	}
+
+	return img.ColorIndexAt(value_x, value_y)
+}
+
+func PixelIsAlive(img *image.Paletted, x int, y int) uint8 {
+	colorIndexValueAtPosition := ContinuousPlanePixelValue(img, x, y)
+
+	if colorIndexValueAtPosition > whiteIndex {
+		return 1
+	} else {
+		return 0
+	}
+}
+
+func PixelLiveNeighborsCount(img *image.Paletted, x int, y int) uint8 {
+
+	aliveNeighbors := PixelIsAlive(img, x-1, y-1) +
+		PixelIsAlive(img, x-1, y) +
+		PixelIsAlive(img, x-1, y+1) +
+		PixelIsAlive(img, x, y-1) +
+		PixelIsAlive(img, x, y+1) +
+		PixelIsAlive(img, x+1, y-1) +
+		PixelIsAlive(img, x+1, y) +
+		PixelIsAlive(img, x+1, y+1)
+
+	return aliveNeighbors
+}
+
 func ConwayGameOfLifeHandler(w http.ResponseWriter, r *http.Request) {
 
 	rand.Seed(time.Now().UnixNano())
@@ -36,15 +84,15 @@ func ConwayGameOfLifeHandler(w http.ResponseWriter, r *http.Request) {
 	generations := 100
 
 	gifFrameDelay := 10
-	gifImageSizeInPixels := 1000
+	gifImageSizeInPixels := 500
 
 	anim := gif.GIF{LoopCount: generations}
 	rect := image.Rect(0, 0, gifImageSizeInPixels, gifImageSizeInPixels)
 
 	progenitorImg := image.NewPaletted(rect, blackRedAndWhitePalette)
 
-	for x := 2; x < gifImageSizeInPixels-2; x++ {
-		for y := 2; y < gifImageSizeInPixels-2; y++ {
+	for x := 0; x < gifImageSizeInPixels; x++ {
+		for y := 0; y < gifImageSizeInPixels; y++ {
 			if rand.Intn(2) == 1 {
 				progenitorImg.SetColorIndex(x, y, blackIndex)
 			}
@@ -81,24 +129,18 @@ func ConwayGameOfLifeHandler(w http.ResponseWriter, r *http.Request) {
 		mortis := true
 
 		//"copy" the progenitorImg
-		for x := 2; x < gifImageSizeInPixels-2; x++ {
-			for y := 2; y < gifImageSizeInPixels-2; y++ {
+		for x := 0; x < gifImageSizeInPixels; x++ {
+			for y := 0; y < gifImageSizeInPixels; y++ {
 				img.SetColorIndex(x, y, progenitorImg.ColorIndexAt(x, y))
 			}
 		}
 
-		for x := 2; x < gifImageSizeInPixels-2; x++ {
-			for y := 2; y < gifImageSizeInPixels-2; y++ {
+		for x := 0; x < gifImageSizeInPixels; x++ {
+			for y := 0; y < gifImageSizeInPixels; y++ {
+
 				pixelIsLive := img.ColorIndexAt(x, y) >= 1
 
-				pixelNeighbors := img.ColorIndexAt(x-1, y-1) +
-					img.ColorIndexAt(x-1, y) +
-					img.ColorIndexAt(x-1, y+1) +
-					img.ColorIndexAt(x, y-1) +
-					img.ColorIndexAt(x, y+1) +
-					img.ColorIndexAt(x+1, y-1) +
-					img.ColorIndexAt(x+1, y) +
-					img.ColorIndexAt(x+1, y+1)
+				pixelNeighbors := PixelLiveNeighborsCount(img, x, y)
 
 				if pixelIsLive && (pixelNeighbors < 2) {
 					img.SetColorIndex(x, y, whiteIndex)
@@ -107,7 +149,7 @@ func ConwayGameOfLifeHandler(w http.ResponseWriter, r *http.Request) {
 				} else if pixelIsLive && (pixelNeighbors > 3) {
 					img.SetColorIndex(x, y, whiteIndex)
 				} else if !pixelIsLive && (pixelNeighbors > 3) {
-					img.SetColorIndex(x, y, blackIndex)
+					img.SetColorIndex(x, y, redIndex)
 				}
 
 				if mortis && (img.ColorIndexAt(x, y) != progenitorImg.ColorIndexAt(x, y)) {
@@ -118,8 +160,8 @@ func ConwayGameOfLifeHandler(w http.ResponseWriter, r *http.Request) {
 		}
 
 		if mortis {
-			for x := 2; x < gifImageSizeInPixels-2; x++ {
-				for y := 2; y < gifImageSizeInPixels-2; y++ {
+			for x := 0; x < gifImageSizeInPixels; x++ {
+				for y := 0; y < gifImageSizeInPixels; y++ {
 					if img.ColorIndexAt(x, y) >= 1 {
 						img.SetColorIndex(x, y, redIndex)
 					}
