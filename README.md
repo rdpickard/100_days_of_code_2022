@@ -60,6 +60,7 @@ A self-issued challenge to write a small program every day for one hundred days.
 | 51     | Writing OAuth 1.0a by hand                              | Partial    | Python       |
 | 52     ||||
 | 53     | Conway life over HTTP                                   | Completed  | Go           | 
+| 54     | Go Generics learning                                    | Completed  | Go           |
 
 
 
