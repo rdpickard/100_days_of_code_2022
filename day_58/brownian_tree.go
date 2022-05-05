@@ -31,10 +31,10 @@ func main() {
 
 	generations := 1000
 
-	newColonyMemberMaxLifeSteps := 10000
+	newColonyMemberMaxLifeSteps := 1000
 
-	gifFrameDelay := 10
-	gifImageSizeInPixels := 500
+	gifFrameDelay := 2
+	gifImageSizeInPixels := 150
 
 	anim := gif.GIF{LoopCount: generations}
 	rect := image.Rect(0, 0, gifImageSizeInPixels, gifImageSizeInPixels)
@@ -47,7 +47,10 @@ func main() {
 	anim.Delay = append(anim.Delay, gifFrameDelay)
 	anim.Image = append(anim.Image, progenitorImg)
 
-	for i := 0; i < generations; i++ {
+	generation := 0
+
+	//for i := 0; i < generations; i++ {
+	for generation < generations {
 		//fmt.Printf("Gen %d", i)
 
 		img := image.NewPaletted(rect, blackRedAndWhitePalette)
@@ -69,6 +72,8 @@ func main() {
 		newColonyMember_steps := 0
 
 		for colonyNeighbors < 1 && newColonyMember_steps < newColonyMemberMaxLifeSteps {
+
+			//img.SetColorIndex(newColonyMember_x, newColonyMember_y, whiteIndex)
 
 			switch rand.Intn(8) {
 			case 0:
@@ -104,7 +109,7 @@ func main() {
 
 			newColonyMember_steps += 1
 			colonyNeighbors = PixelLiveNeighborsCount(progenitorImg, newColonyMember_x, newColonyMember_y)
-
+			img.SetColorIndex(newColonyMember_x, newColonyMember_y, blackIndex)
 		}
 
 		if newColonyMember_steps >= newColonyMemberMaxLifeSteps {
@@ -113,19 +118,20 @@ func main() {
 		} else {
 			//fmt.Printf("KLUMP AT %d, %d", newColonyMember_x, newColonyMember_y)
 			img.SetColorIndex(newColonyMember_x, newColonyMember_y, blueIndex)
+			generation += 1
 		}
 
-		anim.Delay = append(anim.Delay, gifFrameDelay)
-		anim.Image = append(anim.Image, img)
-
-		progenitorImg = img
-		//for x := 0; x < gifImageSizeInPixels; x++ {
-		//	for y := 0; y < gifImageSizeInPixels; y++ {
-		//		progenitorImg.SetColorIndex(x, y, img.ColorIndexAt(x, y))
-		//	}
-		//}
+		//progenitorImg = img
+		for x := 0; x < gifImageSizeInPixels; x++ {
+			for y := 0; y < gifImageSizeInPixels; y++ {
+				if img.ColorIndexAt(x, y) != blackIndex {
+					progenitorImg.SetColorIndex(x, y, img.ColorIndexAt(x, y))
+				}
+			}
+		}
 
 	}
+
 	t := time.Now()
 	gifFileName := fmt.Sprintf("brownian_tree_%d_generations_%d_pxls_%s.gif", generations, gifImageSizeInPixels, t.Format(time.RFC3339))
 	f, err := os.Create(gifFileName)
@@ -164,7 +170,8 @@ func PixelIsAlive(img *image.Paletted, x int, y int) uint8 {
 	colorIndexValueAtPosition := ContinuousPlanePixelValue(img, x, y)
 
 	// Red is dead
-	if colorIndexValueAtPosition > whiteIndex && colorIndexValueAtPosition != redIndex {
+	//if colorIndexValueAtPosition > whiteIndex && colorIndexValueAtPosition != redIndex {
+	if colorIndexValueAtPosition == blueIndex || colorIndexValueAtPosition == greenIndex {
 		return 1
 	} else {
 		return 0
