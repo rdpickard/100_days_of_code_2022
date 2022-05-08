@@ -216,3 +216,4 @@ wrapt==1.14.0
 zipp==3.7.0
 
 cchardet~=2.1.7
+feedparser~=6.0.8
